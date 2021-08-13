@@ -1,0 +1,18 @@
+def count_S(str1):
+    str1 = str1.split()
+    str2 = []
+    for i in str1:
+        if i not in str2:
+            str2.append(i)
+    for i in range(0, len(str2)):
+        print(str2[i], '=', str1.count(str2[i]))
+        
+def main():
+    print('พิมพ์คำที่ค้องการนับ :')
+    text1 = input()
+    str1 = text1.lower()
+    print(str1)
+    count_S(str1)
+
+if __name__=="__main__":
+    main()
